@@ -50,9 +50,9 @@
           </div>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://ericguo5513.github.io/">Chuan Guo</a><sup>1,2*</sup>,</span>
+              <a href="https://ericguo5513.github.io/">Chuan Guo</a><sup>1*</sup>,</span>
             <span class="author-block">
-              <a href="https://yxmu.foo/">Yuxuan Mu</a><sup>1,2*</sup>,</span>
+              <a href="https://yxmu.foo/">Yuxuan Mu</a><sup>1*</sup>,</span>
             <span class="author-block">
               <a href="https://sites.google.com/site/xinxinzuohome/home">Xinxin Zuo</a><sup>2</sup>,
             </span>
@@ -94,7 +94,7 @@
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
-                  <span>Code (Coming soon)</span>
+                  <span>Code</span>
                   </a>
               </span>
               <!-- Dataset Link. -->
@@ -164,11 +164,11 @@
 
 
 <section class="hero is-small is-light">
-  <center><h2 class="title is-3">Gallery of Generation</h2></center>
+  <center><h2 class="title is-3">Label-based Stylization Gallery </h2></center>
   <div class="hero-body">
-
+    <p>Left: <b>Content</b> motions &nbsp Right: <b>Stylized</b> motoins</p>
     <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
+      <div id="results-carousel" class="carousel results-carousel" slidesToShow="2">
         <div class="column is-centered has-text-centered">
           <p><b> Style: Zombie </b></p><br>
           <video poster="" id="tree" autoplay controls muted loop playsinline height="100%">
@@ -201,6 +201,85 @@
 <section class="section">
   <div class="container is-max-desktop">
 
+    <center><h2 class="title is-3">Label-based Stylization (Diverse)</h2></center><br>
+    <div class="content has-text-centered">
+      <video id="replay-video"
+             controls
+             muted
+             preload
+             playsinline
+             width="100%">
+        <source src="./static/video/diverse.mp4#t=0.01"
+                type="video/mp4">
+      </video>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <center><h2 class="title is-3">Motion-based Stylization</h2></center><br>
+    <div class="content has-text-centered">
+      <video id="replay-video"
+             controls
+             muted
+             preload
+             playsinline
+             width="100%">
+        <source src="./static/video/3_motion_based_stylization.mp4#t=0.01"
+                type="video/mp4">
+      </video>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <center><h2 class="title is-3">Prior-based Stylization</h2></center><br>
+    <p>
+      Styles are sampled from our probabilistic style space.
+    </p>
+    <div class="content has-text-centered">
+      <video id="replay-video"
+             controls
+             muted
+             preload
+             playsinline
+             width="100%">
+        <source src="./static/video/4_prior_based_stylization.mp4#t=0.01"
+                type="video/mp4">
+      </video>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <center><h2 class="title is-3">Probabilistic Style Space</h2></center><br>
+    <div class="content has-text-justified">
+      <p>
+        We highlight the features of our probabilistic style space by showcasing its <b>diverse</b> stylization capacity and style <b>interpolation</b> ability. <br>
+      </p>
+      <div class="content has-text-centered">
+        <video id="replay-video"
+                controls
+                muted
+                preload
+                playsinline
+                width="100%">
+          <source src="./static/video/5_interpolation.mp4#t=0.01"
+                  type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+  
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+
     <center><h2 class="title is-3">Application: Text2Motion Stylization</h2></center><br>
     <p>
       We showcase the generalization ability of our method to stylize the OOD motions generated from an off-the-shelf <a href="https://huggingface.co/spaces/MeYourHint/MoMask">T2M model</a>. 
@@ -219,48 +298,7 @@
   </div>
 </section>
 
-<section class="section">
-  <div class="container is-max-desktop">
-    <center><h2 class="title is-3">Probabilistic Style Space</h2></center><br>
-    <div class="content has-text-justified">
-      <p>
-        We highlight the features of our probabilistic style space by showcasing its <b>diverse</b> stylization capacity and style <b>interpolation</b> ability. <br>
-      </p>
-      <div class="columns is-centered">
-        <div class="column">
-          <div class="content has-text-centered">
-            <video id="replay-video"
-                   controls
-                   muted
-                   preload
-                   playsinline
-                   width="90%">
-              <source src="./static/video/diverse.mp4#t=0.01"
-                      type="video/mp4">
-            </video>
-          </div>
-        </div>
-        <div class="column">
-          <div class="content has-text-centered">
-            <video id="replay-video"
-                   controls
-                   muted
-                   preload
-                   playsinline
-                   width="90%">
-              <source src="./static/video/5_interpolation.mp4#t=0.01"
-                      type="video/mp4">
-            </video>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-  
-</section>
-
-<section class="section">
+<!-- <section class="section">
   <div class="container is-max-desktop">
     <center><h2 class="title is-3">Comparisons</h2></center><br>
     <div class="content has-text-justified">
@@ -281,7 +319,7 @@
     </div>
   </div>
   
-</section>
+</section> -->
 
 
 <section class="section is-light">
