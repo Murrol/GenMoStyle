@@ -125,7 +125,7 @@
 
     </div>
 
-    <p>
+    <p style="text-align: justify; margin-inline: 5% 5%;"> 
       Human motion stylization aims to revise the style of an input motion while keeping its content unaltered. Unlike existing works that operate directly in pose space, we leverage the <i>latent space</i> of pretrained autoencoders as a more expressive and robust representation for motion extraction and infusion. Building upon this, we present a novel <i>generative</i> model that produces diverse stylization results of a single motion (latent) code. During training, a motion code is decomposed into two coding components: a deterministic content code, and a probabilistic style code adhering to a prior distribution; then a generator massages the random combination of content and style codes to reconstruct the corresponding motion codes. Our approach is versatile, allowing the learning of probabilistic style space from either style labeled or unlabeled motions, providing notable flexibility in stylization as well. In inference, users can opt to stylize a motion using style cues from a reference motion or a label. Even in the absence of explicit style input, our model facilitates novel re-stylization by sampling from the unconditional style prior distribution. Experimental results show that our proposed stylization models, despite their lightweight design, outperform the state-of-the-arts in style reeanactment, content preservation, and generalization across various applications and settings.
     </p>
     <br>
@@ -166,9 +166,9 @@
 <section class="hero is-small is-light">
   <center><h2 class="title is-3">Label-based Stylization Gallery </h2></center>
   <div class="hero-body">
-    <p>Left: <b>Content</b> motions &nbsp Right: <b>Stylized</b> motoins</p>
+    <p style="text-align: center;">Left: <b>Content</b> motions &nbsp Right: <b>Stylized</b> motoins</p>
     <div class="container">
-      <div id="results-carousel" class="carousel results-carousel" slidesToShow=2>
+      <div id="results-carousel" class="carousel results-carousel">
         <div class="column is-centered has-text-centered">
           <p><b> Style: Zombie </b></p><br>
           <video poster="" id="tree" autoplay controls muted loop playsinline height="100%">
@@ -208,7 +208,7 @@
              muted
              preload
              playsinline
-             width="100%">
+             width="80%">
         <source src="./static/video/diverse.mp4#t=0.01"
                 type="video/mp4">
       </video>
@@ -226,7 +226,7 @@
              muted
              preload
              playsinline
-             width="100%">
+             width="80%">
         <source src="./static/video/3_motion_based_stylization.mp4#t=0.01"
                 type="video/mp4">
       </video>
@@ -240,13 +240,14 @@
     <p>
       Styles are sampled from our probabilistic style space.
     </p>
+    <br>
     <div class="content has-text-centered">
       <video id="replay-video"
              controls
              muted
              preload
              playsinline
-             width="100%">
+             width="80%">
         <source src="./static/video/4_prior_based_stylization.mp4#t=0.01"
                 type="video/mp4">
       </video>
@@ -261,13 +262,14 @@
       <p>
         We highlight the features of our probabilistic style space by showcasing its <b>diverse</b> stylization capacity and style <b>interpolation</b> ability. <br>
       </p>
+      <br>
       <div class="content has-text-centered">
         <video id="replay-video"
                 controls
                 muted
                 preload
                 playsinline
-                width="100%">
+                width="80%">
           <source src="./static/video/5_interpolation.mp4#t=0.01"
                   type="video/mp4">
         </video>
@@ -290,7 +292,7 @@
              muted
              preload
              playsinline
-             width="100%">
+             width="80%">
         <source src="./static/video/1_stylized_text2motion.mp4#t=0.01"
                 type="video/mp4">
       </video>

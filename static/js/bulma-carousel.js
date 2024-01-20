@@ -2333,10 +2333,6 @@ var defaultOptions = {
     changePoint: 640,
     slidesToShow: 2,
     slidesToScroll: 2
-  }, {
-    changePoint: 768,
-    slidesToShow: 3,
-    slidesToScroll: 3
   }],
 
   onReady: null,
